@@ -18,7 +18,7 @@ public class CycleLycee implements Serializable {
 	private String libelle;
 	private String details;
 	@OneToMany(mappedBy = "lycee",fetch = FetchType.LAZY )
-	private Collection<Niveau>niveaux;
+	private Collection<NiveauLycee>niveuxLycee;
 	@OneToMany(mappedBy = "lycee",fetch = FetchType.LAZY )
 	private Collection<Branche>branches;
 

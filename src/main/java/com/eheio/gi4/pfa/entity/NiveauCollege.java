@@ -9,7 +9,7 @@ import javax.persistence.Id;
 
 
 @Entity
-public class Niveau implements Serializable {
+public class NiveauCollege implements Serializable {
 	 @Id
 	 @GeneratedValue
 	private int id;
@@ -19,20 +19,15 @@ public class Niveau implements Serializable {
 	//@JoinColumn(name = "")
 	private CycleCollege college;
 	
-	@ManyToOne
-	//@JoinColumn(name = "")
-	private CycleLycee lycee ;
-
-	public Niveau() {
+	public NiveauCollege() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Niveau(String libelle, String description,CycleCollege college,CycleLycee lycee) {
+	public NiveauCollege(String libelle, String description,CycleCollege college) {
 		super();
 		this.libelle = libelle;
 		this.description = description;
 		this.college = college;
-		this.lycee = lycee;
 
 	}
 	public int getId() {
@@ -59,10 +54,5 @@ public class Niveau implements Serializable {
 	public void setCollege(CycleCollege college) {
 		this.college = college;
 	}
-	public CycleLycee getLycee() {
-		return lycee;
-	}
-	public void setLycee(CycleLycee lycee) {
-		this.lycee = lycee;
-	}
+	
 }

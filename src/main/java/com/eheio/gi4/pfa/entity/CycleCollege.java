@@ -17,8 +17,8 @@ public class CycleCollege implements Serializable {
 	private int id;
 	private String libelle;
 	private String details;
-	@OneToMany(mappedBy = "college",fetch = FetchType.LAZY )
-	private Collection<Niveau>niveaux;
+	@OneToMany(mappedBy = "college",fetch = FetchType.LAZY)
+	private Collection<NiveauCollege>niveauxCollege;
 	public CycleCollege() {
 		super();
 		// TODO Auto-generated constructor stub

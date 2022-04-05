@@ -17,9 +17,11 @@ public class Conseiller implements Serializable {
 	private String login;
 	private String email;
 	private String pwd;
+	/*
 	@ManyToOne
 	//@JoinColumn(name = "")
     private Admin admin;
+    */
 	
 	
 	public Conseiller() {
@@ -27,12 +29,11 @@ public class Conseiller implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Conseiller(String login, String email, String pwd,Admin admin) {
+	public Conseiller(String login, String email, String pwd) {
 		super();
 		this.login = login;
 		this.email = email;
 		this.pwd = pwd;
-		this.admin = admin;
 
 	}
 
@@ -67,13 +68,7 @@ public class Conseiller implements Serializable {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
-	public Admin getAdmin() {
-		return admin;
-	}
-
-	public void setAdmin(Admin admin) {
-		this.admin = admin;
-	}
+	
 
 	
 

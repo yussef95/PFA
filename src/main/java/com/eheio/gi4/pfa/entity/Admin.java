@@ -17,10 +17,12 @@ public class Admin implements Serializable {
 	private String email;
 	private String login;
 	private String pwd;
+	/*
 	@OneToMany(mappedBy = "admin",fetch = FetchType.LAZY )
 	private Collection<Conseiller>conseillers;
 	@OneToMany(mappedBy = "admin",fetch = FetchType.LAZY )
 	private Collection<User>users;
+	*/
 
 	
 	public Admin() {
